@@ -13,4 +13,8 @@ spring:
     url: jdbc:mysql://localhost:3306/microservices_db?autoreconnect = true
     username: root
 
-    
+ jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
